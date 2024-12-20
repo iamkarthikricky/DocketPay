@@ -12,9 +12,10 @@ h1{
   margin: 0px;
 }
 button{
-  border: none;
   cursor: pointer;
   background-color: transparent;
+  font-family: var(--font-public);
+  color: inherit;
 }
 ul{
   list-style: none;
