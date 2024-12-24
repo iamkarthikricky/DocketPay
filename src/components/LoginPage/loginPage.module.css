@@ -1,52 +1,16 @@
 *{
     box-sizing: border-box;
 }
-.landing_page_container{
-    background-color:#333366;
-}
-
-.email_text{
-    font-family:var(--font-public);
-    font-size: var(--sub-heading);
-    font-weight: var(--font-weight600);
+.brand_img{
+    width: 100px;
+    align-self: center;
+    background-color:grey;
 }
 .forgot_password{
     font-family:var(--font-public);
     font-size: var(--main-para);
     font-weight: var(--font-weight500);
-    color: #7367F0;
-}
-.login_secondary_btn{
-    border-bottom: 1px solid black;
-    padding-bottom: 1px;
-    border-style: dashed;
-    font-size: var(--sub-heading);
-}
-
-.form_text{
-    font-family:var(--font-public);
-    font-size: var(--sub-heading);
-    font-weight: var(--font-weight400);
-    color: var(--color-gray);
-}
-.create_now_text{
-    composes:email_text;
-    color: #7367F0;
-    text-decoration: none;
-}
-.login_heading{
-    font-family:var(--font-public);
-    font-size: var(--main-heading);
-    font-weight: var(--font-weight500);
-    color: var(--color-black);
-}
-
-/* Create Account Styling */
-.welcome_text{
-    font-family:var(--font-public);
-    font-size: var(--main-heading);
-    font-weight: var(--font-weight500);
-    color: var(--color-black);
+    color:var(--color-black);
 }
 .description{
     font-family:var(--font-public);
@@ -54,4 +18,22 @@
     font-weight: var(--font-weight300);
     color: lightslategrey;
 }
-
+.social_text{
+    font-family:var(--font-public);
+    font-size: var(--sub-heading);
+    font-weight: var(--font-weight500);
+    color: var(--color-black);
+}
+.create_now_text{
+    composes:description;
+    color:var(--color-black) !important;
+    font-weight: var(--font-weight500) !important;
+    text-decoration: none;
+}
+/* Create Account Styling */
+.welcome_text{
+    font-family:var(--font-public);
+    font-size: var(--main-heading);
+    font-weight: var(--font-weight500);
+    color: var(--color-black);
+}
