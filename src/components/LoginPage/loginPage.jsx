@@ -169,7 +169,7 @@ export const EmailLogin = () => {
         if (response.status === 200) {
             setIsLoading(false)
             localStorage.setItem("token",response.data.token)
-            navigate("/home")
+            navigate("/dashboard")
         }
         else{
           alert("Something went wrong !")
@@ -198,7 +198,7 @@ export const EmailLogin = () => {
         
         }
         else{
-          toast.error("Something went wrong.")
+          toast.error(`${error.message}`)
         }
       }
     };

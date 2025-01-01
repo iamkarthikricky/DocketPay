@@ -85,7 +85,7 @@ const EnterOtp = () => {
         message.success(responseMessage, 3);
         if (token) {
           localStorage.setItem("token", token);
-          setTimeout(() => navigate("/home"), 2000);
+          setTimeout(() => navigate("/dashboard"), 2000);
         } else {
           handleSteps();
         }
